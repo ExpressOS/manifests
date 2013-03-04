@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github"
+          fetch="https://github.com/ExpressOS" />
+
+  <remote name="aosp"
+          fetch="https://android.googlesource.com" />
+
+  <default revision="master" remote="github" />
+
+  <project path="src/third_party/l4android" name="third_party-l4android.git" />
+  <project path="src/third_party/l4re" name="third_party-l4re.git" />
+  <project path="src/third_party/korlib" name="third_party-korlib.git" />
+  <project path="src/kernel/expressos" name="expressos.git" />
+  <project path="src/userspace" name="userspace.git" />
+  <project path="src/build" name="build.git" />
+
+  <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" remote="aosp" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" />
+  <project path="prebuilts/android-images" name="prebuilts-android-images.git" />
+
+</manifest>
